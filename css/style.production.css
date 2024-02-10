@@ -1,0 +1,701 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 2 version
+*/
+
+/*
+Colors used
+
+Text Color (dark blue): #0E2F44;
+Primary Color - Background (light blue): #B2D1D1;
+Secondary Color - Text, Link, and Primary Button (dark blue): #0E2F44;
+Tertiary Color - Secondary Button and Grid (mid grayish blue): #5F9EA0
+ */
+
+ a {
+    color: #0E2F44;
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: -webkit-transform 0.2s ease;
+    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+/* a:visited {
+    visited link -I'm turning this off so that my button text color doesn't change
+    color: inherit;
+} */
+
+a:hover,
+a:focus {
+    /* No underlining when hovering over a link */
+    text-decoration: none;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+}
+
+a:active {
+    /* selected link */
+    color: #5F9EA0;
+}
+
+body {
+    background-color: #B2D1D1;
+    font-family: 'EB Garamond', serif;
+    font-weight: 500px;
+    font-size:14px;
+    line-height: 1.5;
+    text-align:justify;
+    color: #0E2F44;
+}
+
+img {
+    border: #0E2F44;
+    border-width: 2px;
+    border-style:solid;
+    border-radius: 5px;
+}
+
+.img__favicon {
+    position: fixed; /* Fixes favicon icon in one place and it stays there when scrolling */
+}
+
+.img__profileportrait {
+    float: left; /* allows you to wrap and control the flow of other inline elements around the target element? */
+    margin-right: 30px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.img__footersmlogo {
+    width: 30px; /* Size of the footer social media logos */
+    border: none;
+}
+
+.animation-image {
+    max-width:700px;
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; /* starts a flexbox in the parent container and have it applied to all its children? */
+    margin: 0 auto; /* Centers the footer */
+    text-align: center; /* Centers the footer */
+}
+
+.img__ggbsvg {
+    border: none;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight:700px;
+    line-height: 0.5;
+    font-style: bold;
+    font-variant: small-caps;
+}
+
+h2  {
+    font-size: 24px;
+    font-weight:700px;
+    line-height: 1.5;
+    font-style: bold;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight:700px;
+    line-height: 1;
+    font-style: bold;
+    font-variant: small-caps;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight:700px;
+    line-height: 1;
+    font-style: bold;
+    font-variant: small-caps;
+}
+
+p {
+    color: #0E2F44;
+    font-size:14px;
+    line-height: 1.5;
+    font-style: normal;
+}
+
+button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    /* takes the font from the outer container */
+    display: inline-block;
+    /* takes the font from te outer container */
+    font-family: inherit;
+    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+    background-color: #0E2F44;
+    color: white;
+    text-decoration: none;
+    /*adds spacing to the button (this will be discussed more in-depth later) */
+    padding:10px;
+    border-radius: 10px; /* Curves the image (button) to be more visually appealing (a value of 50% will make it a circle */
+    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    /* longhand 
+    transition-duration: .5s;
+    transition-property: opacity; */
+    /* shorthand */
+    -webkit-transition: color .7s;
+    transition: color .7s;
+    margin: 2px;
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: -webkit-transform 0.2s ease;
+    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    /* takes the font from the outer container */
+    display: inline-block;
+    /* takes the font from te outer container */
+    font-family: inherit;
+    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+    background-color: #0E2F44;
+    color: white;
+    text-decoration: none;
+    /*adds spacing to the button (this will be discussed more in-depth later) */
+    padding:10px;
+    border-radius: 10px; /* Curves the image (button) to be more visually appealing (a value of 50% will make it a circle */
+    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    /* longhand 
+    transition-duration: .5s;
+    transition-property: opacity; */
+    /* shorthand */
+    -webkit-transition: color .7s;
+    transition: color .7s;
+    margin: 2px;
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: -webkit-transform 0.2s ease;
+    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.button__secondary {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    /* takes the font from the outer container */
+    display: inline-block;
+    /* takes the font from te outer container */
+    font-family: inherit;
+    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+    background-color: #0E2F44;
+    color: white;
+    text-decoration: none;
+    /*adds spacing to the button (this will be discussed more in-depth later) */
+    padding:10px;
+    border-radius: 10px; /* Curves the image (button) to be more visually appealing (a value of 50% will make it a circle */
+    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    /* longhand 
+    transition-duration: .5s;
+    transition-property: opacity; */
+    /* shorthand */
+    -webkit-transition: color .7s;
+    transition: color .7s;
+    margin: 2px;
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: -webkit-transform 0.2s ease;
+    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+button:hover {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacty of the button to 80% */
+    background-color:#5F9EA0;
+    color:#0E2F44;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+}
+
+button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacty of the button to 80% */
+    background-color:#5F9EA0;
+    color:#0E2F44;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+}
+
+.button:hover {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacty of the button to 80% */
+    background-color:#5F9EA0;
+    color:#0E2F44;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+}
+
+.button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacty of the button to 80% */
+    background-color:#5F9EA0;
+    color:#0E2F44;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+}
+
+.button__secondary {
+    background-color:#5F9EA0;
+    color:#0E2F44;
+}
+
+.button__secondary:hover {
+    cursor: pointer;
+    /* reduces the opacty of the button to 80% */
+    background-color:#0E2F44;
+    color:#fff;
+}
+
+.button__secondary:focus {
+    cursor: pointer;
+    /* reduces the opacty of the button to 80% */
+    background-color:#0E2F44;
+    color:#fff;
+}
+
+button:active {
+    background-color:#B2D1D1;
+}
+
+button:focus {
+    border: 2px solid red;
+}
+
+html {
+    padding:10px; /* Adds a 10px inner spacing to all sides*/
+    margin:10px; /* Adds a 10px outer spacing to all sides*/
+    border: 5px solid #0E2F44; /* Attributes describe: thickness, type, color*/
+    border-radius: 5px;
+}
+
+table {
+    padding:10px; /* Adds a 10px inner spacing to all sides*/
+    margin: 5px; /* Adds a 5px outer spacing to all sides*/
+    border: 2px solid #0E2F44; /* Attributes describe: thickness, type, color*/
+}
+
+table {
+    display: inline-block
+}
+
+span {
+    color:#fff;
+    background-color: #0E2F44;
+    padding: 7px; /* Adds a 7px inner spacing to all sides*/
+    margin: 1px; /* Adds a 1px outer spacing to all sides*/
+    border: 2px solid #0E2F44; /* Attributes describe: thickness, type, color*/
+    border-radius: 20px;
+}
+
+.fixed {
+    position: fixed; /* Determines where (bottom right corner) the favicon icon is fixed */
+    margin:20px;
+    padding:20px;
+    bottom:20px;
+    right:20px;
+}
+
+.profile {
+    max-width:700px;
+    margin: 0 auto; /* Centers */
+    padding:20px;
+}
+
+.page-footer {
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; /* starts a flexbox in the parent container and have it applied to all its children? */
+    margin: 0 auto; /* Centers the footer */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; /* Puts the items in a column */
+    text-align: center; /* Centers the footer */
+}
+
+.page-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    padding:20px;
+    margin: auto;
+    border-bottom: 1px solid #0E2F44;
+}
+
+.page-header__item {
+    width: 200px;
+    height: 70px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 200px;
+            flex: 0 1 200px;
+}    
+
+.page-header__item:nth-child(2) {
+    padding-left:20px; /* Gives the second child with class page-header__item some padding on its left so it isn't touching the image */
+}
+
+.page-header .page-header__item:last-child {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    height: 100%;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; /* Puts everything on the pages into the border box. Sets the width value for every element to include their padding and border values. */
+}
+
+.navigation-list {
+    list-style-type: none; /* Removes the bullet points */
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.navigation-list li {
+    display: inline-block; /* Makes each item in the list appear in a line rather than on top of each other */
+    margin-left: 15px;
+}
+
+.navigation-list__item--active {
+    text-decoration: none;
+}
+
+/* Responsive adjustments for the navigation bar */
+@media (max-width: 768px) {
+    .page-header {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    .page-header__item {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+                flex: 0 0 auto; /* Adjust items to not grow or shrink */
+        width: auto; /* Adjust width for mobile */
+        margin-top:10px; /* Add some space between logo/name and navigation */
+    }
+
+    .navigation-list li {
+        display: block; /* Stack the navigation items vertically */
+        margin-left: 0; /* Remove the left margin */
+        margin-bottom:10px; /* Add some space between items */
+    }
+
+    .navigation-list__item--active,
+    .navigation-list__item {
+        display: block; /* Ensure links also stack vertically */
+    }
+}
+
+/* start grid fallback */
+.grid__item {
+    display: inline-block;
+    width: 33%;
+}
+/* end grid fallback */
+
+@supports (display: grid) {
+    .grid {
+        display: -ms-grid;
+        display: grid; /* Adds a grid with three columns and three rows of equal size for each grid item */
+        /* grid-template-columns: 300px 300px 300px; --> It’s considered good practice to specify only one property, and this property is usually the columns property. This means the rows property defaults to auto, and that the grid should still work even if the row with the property grid-template-rows is deleted */
+        -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+        grid-template-columns: 1fr 1fr 1fr; /* Fr is a flex unit used to allocate available space to grid items. Instead of using 300px, for example, you can use 1fr for each value because each grid item should be the same size. If you wanted a column to take up twice the size of the other columns, however, you’d pass on the value 2f */
+        grid-gap: 20px; /* Adds spacing between each grid item */
+        margin: 0;
+    }
+    
+    .grid__item {
+        background-color:#5F9EA0; /* Adds a background color to each grid item */
+        width: auto; /* This is to ensure that the power of the new layout grid can still be used in modern browsers. It also automatically takes the width from the defined grid container. */
+        min-height: auto;
+        margin: 0;
+        padding:20px;
+        border-radius: 10px; /* Rounds the edges of the grid items */
+        text-align: left; /* overwrites the earlier text-align: justify (for the rest of the site) for the text in the grid */
+        -webkit-transition: -webkit-transform 0.2s ease;
+        transition: -webkit-transform 0.2s ease;
+        transition: transform 0.2s ease;
+        transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+    }
+    .grid__item:hover {
+        -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+        cursor: pointer;
+    }
+    
+    .grid__item:last-child {
+        /* grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3; 
+        OR you can do it this way below */
+        -ms-grid-column: 3;
+        grid-column: 3/3;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 2;
+        grid-row: 1/3;
+    }
+}
+
+.grid-contact {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin: 0 24px 0;
+    background-color:#5F9EA0;
+    padding: 70px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.grid-contact__item {
+    font-size: 17px;
+}
+
+@media all and (max-width: 500px) {
+    .grid {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+    .grid-contact {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+    .grid {
+      -ms-grid-columns: 1fr 20px 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .grid {
+        grid-gap: 10px;
+    }
+    .grid__item:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+    h1 {
+        font-size: 22px;
+    }
+}
+
+.about-me__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    max-width:700px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding:20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-me__list {
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.work__container {
+    padding:20px;
+    text-align: center;
+}
+
+.contact__container {
+    padding:20px;
+    text-align: center;
+}
+
+@-webkit-keyframes color-change {
+    0% {
+        fill:#edc655;
+    }
+    50% {
+        fill:#fcffad;
+    }
+    100% {
+        fill:#f76414;
+    }
+}
+
+@keyframes color-change {
+    0% {
+        fill:#edc655;
+    }
+    50% {
+        fill:#fcffad;
+    }
+    100% {
+        fill:#f76414;
+    }
+}
+
+.Sun {
+    -webkit-animation: 15s color-change infinite alternate linear;
+            animation: 15s color-change infinite alternate linear;
+    /* animation-name: color-change;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear; */
+}
+
+@-webkit-keyframes bird-move-reverse {
+    0% {
+        -webkit-transform: translate(30px, -30px);
+                transform: translate(30px, -30px);
+    }
+    50% {
+        -webkit-transform: translate(-50px, 40px);
+                transform: translate(-50px, 40px);
+    }
+    100% {
+        -webkit-transform: translate(-140px, -30px);
+                transform: translate(-140px, -30px);
+    }
+}
+
+@keyframes bird-move-reverse {
+    0% {
+        -webkit-transform: translate(30px, -30px);
+                transform: translate(30px, -30px);
+    }
+    50% {
+        -webkit-transform: translate(-50px, 40px);
+                transform: translate(-50px, 40px);
+    }
+    100% {
+        -webkit-transform: translate(-140px, -30px);
+                transform: translate(-140px, -30px);
+    }
+}
+
+.Bird {
+    -webkit-animation: 15s bird-move-reverse infinite alternate linear;
+            animation: 15s bird-move-reverse infinite alternate linear;
+}
+
+@-webkit-keyframes boat1-move-reverse {
+    0% {
+        -webkit-transform: translate(210px, 0);
+                transform: translate(210px, 0);
+    }
+    100% {
+        -webkit-transform: translate(-350px, 0);
+                transform: translate(-350px, 0);
+    }
+}
+
+@keyframes boat1-move-reverse {
+    0% {
+        -webkit-transform: translate(210px, 0);
+                transform: translate(210px, 0);
+    }
+    100% {
+        -webkit-transform: translate(-350px, 0);
+                transform: translate(-350px, 0);
+    }
+}
+
+.Boat1 {
+    /* animation: 4s boat1-move-reverse infinite alternate linear;  */
+    -webkit-animation-name: boat1-move-reverse;
+            animation-name: boat1-move-reverse;
+    -webkit-animation-duration: 25s;
+            animation-duration: 25s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+}
+
+@-webkit-keyframes boat2-move {
+    0% {
+        -webkit-transform: translate(-360px, 0);
+                transform: translate(-360px, 0);
+    }
+    100% {
+        -webkit-transform: translate(290px, 0);
+                transform: translate(290px, 0);
+    }
+}
+
+@keyframes boat2-move {
+    0% {
+        -webkit-transform: translate(-360px, 0);
+                transform: translate(-360px, 0);
+    }
+    100% {
+        -webkit-transform: translate(290px, 0);
+                transform: translate(290px, 0);
+    }
+}
+
+.Boat2 {
+    -webkit-animation-name: boat2-move;
+            animation-name: boat2-move;
+    -webkit-animation-duration: 20s;
+            animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+}
+
+.animation__attribution {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    max-width:700px;
+    margin: 0 auto;
+    text-align: center;
+}

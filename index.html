@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack Pardini</title>
+    <link rel="icon" type="image/png" href="img/favicon-32x32-v2.png" sizes="32x32">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+
+</head>
+
+<div class="fixed">
+    <a href="#">
+        <img class="img__favicon" src="img/logo-for-favicon-v2.jpg" width="40" alt="favicon">
+    </a>
+</div>
+
+<body>
+
+    <!-- Header including logo, name, and main navigation -->
+    <header class="page-header">
+        <!-- Logo -->
+        <img src="img/ski-logo-v2.jpg" class="page-header__item" alt="ski logo">
+        <!-- Name -->
+        <div class="page-header__item">
+            <h1>Jack Pardini</h1>
+        </div>
+        <!-- Main Navigation -->
+        <nav class="main-navigation page-header__item">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active"
+                        target="_blank">
+                        <h4>Home</h4>
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="about.html" role="menuitem" class="navigation-list__item" target="_blank">
+                        <h4>About Me</h4>
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="work.html" role="menuitem" class="navigation-list__item" target="_blank">
+                        <h4>Work</h4>
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="contact.html" role="menuitem" class="navigation-list__item" target="_blank">
+                        <h4>Contact</h4>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="profile">
+            <img src="img/jack-pardini-profile.jpeg" class="img__profileportrait" alt="jack pardini profile picture">
+            <h1>Hello World</h1>
+            <p>
+                My name is Jack Pardini. I am a <span>web</span> developer living in Los Angeles.
+            </p>
+            <a href="work.html" rel="work" target="_blank">
+                <h4>Check out some of my code</h4>
+            </a>
+            <p>
+                <a href="about.html#myskills" rel="skills" target="_blank">
+                    <h4>Skills</h4>
+                </a>
+            </p>
+            <p>
+                <a href="files/JMP Resume PDF.pdf" rel="resume" target="_blank">
+                    <h4>Resume</h4>
+                </a>
+            </p>
+        </div>
+        <article>
+            <h2 id="section2">Section 2</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Urna cursus eget nunc scelerisque. Pharetra sit amet aliquam id diam maecenas.
+                Praesent tristique magna sit amet purus. Adipiscing elit duis tristique sollicitudin nibh sit. Mattis
+                nunc sed blandit libero volutpat sed cras ornare. Suspendisse faucibus interdum posuere lorem ipsum
+                dolor sit amet. Congue mauris rhoncus aenean vel elit. In fermentum et sollicitudin ac orci phasellus
+                egestas tellus rutrum. Vitae ultricies leo integer malesuada nunc. Turpis massa sed elementum tempus
+                egestas. Pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id.
+            </p>
+            <p>
+                Cras sed felis eget velit aliquet. In arcu cursus euismod quis viverra nibh cras. Lorem ipsum dolor sit
+                amet consectetur. Sit amet consectetur adipiscing elit duis tristique sollicitudin nibh. Nulla aliquet
+                porttitor lacus luctus. At auctor urna nunc id cursus metus aliquam eleifend mi. Ac orci phasellus
+                egestas tellus rutrum tellus pellentesque eu tincidunt. Urna nec tincidunt praesent semper feugiat.
+                Neque egestas congue quisque egestas. Tellus pellentesque eu tincidunt tortor.
+            </p>
+            <p>
+                Sit amet consectetur adipiscing elit duis. Donec ac odio tempor orci dapibus. Nulla aliquet enim tortor
+                at auctor urna nunc id cursus. Pulvinar sapien et ligula ullamcorper malesuada. Lorem dolor sed viverra
+                ipsum. Viverra aliquet eget sit amet tellus cras adipiscing. Malesuada fames ac turpis egestas maecenas
+                pharetra. Viverra mauris in aliquam sem fringilla. Vel pharetra vel turpis nunc eget lorem. Posuere
+                lorem ipsum dolor sit. Vitae semper quis lectus nulla at volutpat diam ut venenatis.
+            </p>
+        </article>
+        <footer>
+            <p>
+                <button type="button" class="button">Default Button</button>
+                <button type="button" class="button__secondary">Secondary Button</button>
+            </p>
+        </footer>
+    </main>
+
+    <!-- Footer with links to social media profiles -->
+    <footer class="page-footer">
+        <p>Find me on</p>
+        <div class="social-media">
+            <img class="img__footersmlogo" src="img/1964417_github_logo_media_social_icon.svg" alt="Github">
+            <img class="img__footersmlogo" src="img/3225183_app_logo_media_popular_social_icon.svg" alt="Twitter">
+            <img class="img__footersmlogo" src="img/3225190_app_linkedin_logo_media_popular_icon.svg" alt="LinkedIn">
+        </div>
+    </footer>
+    <div>
+        <a href="#">Back to top</a>
+    </div>
+    <div>
+        <a href="#section2">Go to Section 2</a>
+    </div>
+
+    <script src="js/tota11y.min.js"></script>
+
+</body>
+
+</html>
