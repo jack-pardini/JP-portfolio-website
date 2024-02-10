@@ -157,9 +157,8 @@ button,
     transition-duration: .5s;
     transition-property: opacity; */
     /* shorthand */
-    transition: color .7s;
+    transition: color .7s transform 0.2s ease;
     margin: 2px;
-    transition: transform 0.2s ease;
 }
 
 button:hover, button:focus, .button:hover, .button:focus {

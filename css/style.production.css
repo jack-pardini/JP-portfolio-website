@@ -156,13 +156,9 @@ button {
     transition-duration: .5s;
     transition-property: opacity; */
     /* shorthand */
-    -webkit-transition: color .7s;
-    transition: color .7s;
+    -webkit-transition: color .7s transform 0.2s ease;
+    transition: color .7s transform 0.2s ease;
     margin: 2px;
-    -webkit-transition: -webkit-transform 0.2s ease;
-    transition: -webkit-transform 0.2s ease;
-    transition: transform 0.2s ease;
-    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
 .button {
@@ -185,13 +181,9 @@ button {
     transition-duration: .5s;
     transition-property: opacity; */
     /* shorthand */
-    -webkit-transition: color .7s;
-    transition: color .7s;
+    -webkit-transition: color .7s transform 0.2s ease;
+    transition: color .7s transform 0.2s ease;
     margin: 2px;
-    -webkit-transition: -webkit-transform 0.2s ease;
-    transition: -webkit-transform 0.2s ease;
-    transition: transform 0.2s ease;
-    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
 .button__secondary {
@@ -214,13 +206,9 @@ button {
     transition-duration: .5s;
     transition-property: opacity; */
     /* shorthand */
-    -webkit-transition: color .7s;
-    transition: color .7s;
+    -webkit-transition: color .7s transform 0.2s ease;
+    transition: color .7s transform 0.2s ease;
     margin: 2px;
-    -webkit-transition: -webkit-transform 0.2s ease;
-    transition: -webkit-transform 0.2s ease;
-    transition: transform 0.2s ease;
-    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
 button:hover {
