@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Jack</title>
-    <link rel="icon" type="image/png" href="img/favicon-32x32-v2.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="img/favicon-32x32-v2.png" sizes="32x32">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,14 +15,15 @@
 
 </head>
 
-<div class="fixed">
-    <a href="#">
-        <img class="img__favicon" src="img/logo-for-favicon-v2.jpg" width="40" alt="favicon">
-    </a>
-</div>
+
 
 <body>
 
+    <div class="fixed">
+        <a href="#">
+            <img class="img__favicon" src="img/logo-for-favicon-v2.jpg" width="40" alt="favicon">
+        </a>
+    </div>
     <!-- Header including logo, name, and main navigation -->
     <header class="page-header">
         <!-- Logo -->
@@ -72,15 +73,13 @@
                 Email: <a href="mailto:jack.pardini@gmail.com"> jack.pardini@gmail.com</a><br>
                 <a href="skype:live:jack.pardini">Skype</a>
                 </p>
-                <a href="mailto:jack.pardini@gmail.com">
-                    <button type="contact" class="button">Contact Me</button>
-                </a>
+                <a href="mailto:jack.pardini@gmail.com" class="button" target="_blank">Contact Me</a>
             </div>
             <div class="grid-contact__item">
                 <h3>Leave a Message</h3>
-                <form action="" method="post" id="contact-form">
+                <form action="send" method="post" id="contact-form">
                     <label class="standard-label" for="contact-name">Name: </label><br>
-                    <input type="name" id="contact-name" required><br>
+                    <input type="text" id="contact-name" required><br>
 
                     <label class="standard-label" for="contact-email">Email: </label><br>
                     <input type="email" id="contact-email" required><br>
@@ -104,9 +103,11 @@
             <a href="https://github.com/jack-pardini/JP-portfolio-website.git" target="_blank" rel="GitHub">
                 <img class="img__footersmlogo" src="img/1964417_github_logo_media_social_icon.svg" alt="Github"></a>
             <a href="#" rel="Twitter">
-                <img class="img__footersmlogo" src="img/3225183_app_logo_media_popular_social_icon.svg" alt="Twitter"></a>
+                <img class="img__footersmlogo" src="img/3225183_app_logo_media_popular_social_icon.svg"
+                    alt="Twitter"></a>
             <a href="https://www.linkedin.com/in/jackpardini/" target="_blank" rel="LinkedIn">
-                <img class="img__footersmlogo" src="img/3225190_app_linkedin_logo_media_popular_icon.svg" alt="LinkedIn"></a>
+                <img class="img__footersmlogo" src="img/3225190_app_linkedin_logo_media_popular_icon.svg"
+                    alt="LinkedIn"></a>
         </div>
     </footer>
     <div>
