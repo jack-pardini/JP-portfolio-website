@@ -10,7 +10,7 @@ Tertiary Color - Secondary Button and Grid (mid grayish blue): #5F9EA0
 :root {
     --primary-color: #B2D1D1;
     --secondary-color: #0E2F44;
-    --tertiary-color: #5F9EA0;
+    --tertiary-color: #6fa7a9;
     --lightest-font-color: #fff;
     --focus-red-color: red;
     --animation-sun-start: #edc655;
@@ -22,7 +22,6 @@ Tertiary Color - Secondary Button and Grid (mid grayish blue): #5F9EA0
     --padding-margin-px-lg: 20px;
     --font-weight-700px: 700px;
     --max-width-700px: 700px;
-
 }
 
 a {
@@ -62,6 +61,15 @@ img {
     border-width: 2px;
     border-style:solid;
     border-radius: 5px;
+}
+
+.img__footersmlogo {
+    transition: transform 0.2s ease;
+    margin: 2px;
+}
+
+.img__footersmlogo:hover, .img__footersmlogo:focus {
+    transform: scale(1.1);
 }
 
 .img__favicon {
@@ -117,10 +125,8 @@ h3 {
 
 h4 {
     font-size: 16px;
-    font-weight:var(--font-weight-700px);
-    line-height: 1;
-    font-style: bold;
-    font-variant: small-caps;
+    font-weight:bold;
+    line-height: 0;
 }
 
 p {
@@ -193,22 +199,35 @@ html {
     border-radius: 5px;
 }
 
-table {
-    padding:var(--padding-margin-px); /* Adds a 10px inner spacing to all sides*/
+.about-me-skills {
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+table, th, td {
+    padding:15px; /* Adds a 15px inner spacing to all sides*/
     margin: 5px; /* Adds a 5px outer spacing to all sides*/
     border: 2px solid var(--secondary-color); /* Attributes describe: thickness, type, color*/
+    border-collapse: collapse;
 }
 
 table {
-    display: inline-block
+    display: inline-table;
+    font-size: var(--bodyfontsize);
+}
+
+thead {
+    font-weight: bold;
+    background-color: var(--tertiary-color);
 }
 
 span {
-    color:var(--lightest-font-color);
-    background-color: var(--secondary-color);
-    padding: 7px; /* Adds a 7px inner spacing to all sides*/
+    color:var(--secondary-color);
+    background-color: var(--tertiary-color);
+    padding: 5px; /* Adds a 7px inner spacing to all sides*/
     margin: 1px; /* Adds a 1px outer spacing to all sides*/
-    border: 2px solid var(--secondary-color); /* Attributes describe: thickness, type, color*/
+    border: 1px solid var(--tertiary-color); /* Attributes describe: thickness, type, color*/
     border-radius: 20px;
 }
 
@@ -223,7 +242,7 @@ span {
 .profile {
     max-width:var(--max-width-700px);
     margin: 0 auto; /* Centers */
-    padding:var(--padding-margin-px-lg);
+    padding:4vmax
 }
 
 .page-footer {
@@ -270,7 +289,7 @@ span {
 
 .navigation-list li {
     display: inline-block; /* Makes each item in the list appear in a line rather than on top of each other */
-    margin-left: 15px;
+    margin-left: 40px;
 }
 
 .navigation-list__item--active {
