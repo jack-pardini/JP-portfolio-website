@@ -16,7 +16,7 @@ Tertiary Color - Secondary Button and Grid (mid grayish blue): #5F9EA0
     --animation-sun-start: #edc655;
     --animation-sun-mid: #fcffad;
     --animation-sun-end: #f76414;
-    --bodyfontsize: 14px;
+    --bodyfontsize: 18px;
     --padding-margin-px: 10px;
     --padding-margin-px-lg: 20px;
     --font-weight-700px: 700px;
@@ -78,12 +78,12 @@ img {
 .img__profileportrait {
     float: left; /* allows you to wrap and control the flow of other inline elements around the target element? */
     margin-right: 30px;
-    width: 200px;
+    width: 250px;
     border-radius: 50%;
 }
 
 .img__footersmlogo {
-    width: 30px; /* Size of the footer social media logos */
+    width: 40x; /* Size of the footer social media logos */
     border: none;
 }
 
@@ -100,7 +100,7 @@ img {
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 35px;
     font-weight:var(--font-weight-700px);
     line-height: 0.5;
     font-style: bold;
@@ -108,14 +108,14 @@ h1 {
 }
 
 h2  {
-    font-size: 24px;
+    font-size: 28px;
     font-weight:var(--font-weight-700px);
     line-height: 1.5;
     font-style: bold;
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 22px;
     font-weight:var(--font-weight-700px);
     line-height: 1;
     font-style: bold;
@@ -123,7 +123,7 @@ h3 {
 }
 
 h4 {
-    font-size: 16px;
+    font-size: 20px;
     font-weight:bold;
     line-height: 0;
 }
@@ -307,6 +307,10 @@ span {
         margin-top:var(--padding-margin-px); /* Add some space between logo/name and navigation */
     }
 
+    .navigation-list {
+        text-align: center;
+    }
+
     .navigation-list li {
         display: block; /* Stack the navigation items vertically */
         margin-left: 0; /* Remove the left margin */
@@ -373,7 +377,7 @@ span {
 }
 
 .grid-contact__item {
-    font-size: 17px;
+    font-size: 23px;
 }
 
 @media all and (max-width: 500px) {
