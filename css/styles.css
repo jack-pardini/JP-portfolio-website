@@ -388,6 +388,12 @@ span {
         grid-template-columns: 1fr;
         grid-gap: 10px;
     }
+    body {
+        font-size: 14px;
+    }
+    table {
+        font-size: 14px;
+    }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
